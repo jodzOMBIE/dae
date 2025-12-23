@@ -5,7 +5,7 @@ import useProxyMenu, {
 } from "components/apps/Browser/useProxyMenu";
 import { ADDRESS_INPUT_PROPS } from "components/apps/FileExplorer/AddressBar";
 import useHistoryMenu from "components/apps/Browser/useHistoryMenu";
-import useBookmarkMenu from "components/apps/Browser/useBookmarkMenu";
+
 
 const Browser: FC<ComponentProcessProps> = ({ id }) => {
   const {
