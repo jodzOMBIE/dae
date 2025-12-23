@@ -6,57 +6,6 @@ import useProxyMenu, {
 import { ADDRESS_INPUT_PROPS } from "components/apps/FileExplorer/AddressBar";
 import useHistoryMenu from "components/apps/Browser/useHistoryMenu";
 import useBookmarkMenu from "components/apps/Browser/useBookmarkMenu";
-import {
-  createDirectoryIndex,
-  type DirectoryEntries,
-} from "components/apps/Browser/directoryIndex";
-import {
-  Arrow,
-  Network,
-  Refresh,
-  Stop,
-} from "components/apps/Browser/NavigationIcons";
-import StyledBrowser from "components/apps/Browser/StyledBrowser";
-import {
-  DINO_GAME,
-  HOME_PAGE,
-  NOT_FOUND,
-  PROXIES,
-  bookmarks,
-} from "components/apps/Browser/config";
-import { type ComponentProcessProps } from "components/system/Apps/RenderComponent";
-import useTitle from "components/system/Window/useTitle";
-import { useFileSystem } from "contexts/fileSystem";
-import { useProcesses } from "contexts/process";
-import processDirectory from "contexts/process/directory";
-import useHistory from "hooks/useHistory";
-import Button from "styles/common/Button";
-import {
-  FAVICON_BASE_PATH,
-  IFRAME_CONFIG,
-  ONE_TIME_PASSIVE_EVENT,
-  SHORTCUT_EXTENSION,
-} from "utils/constants";
-import {
-  GOOGLE_SEARCH_QUERY,
-  LOCAL_HOST,
-  getExtension,
-  getUrlOrSearch,
-  haltEvent,
-  label,
-} from "utils/functions";
-import {
-  getInfoWithExtension,
-  getModifiedTime,
-  getShortcutInfo,
-} from "components/system/Files/FileEntry/functions";
-import { useSession } from "contexts/session";
-
-declare module "react" {
-  interface IframeHTMLAttributes<T> extends React.HTMLAttributes<T> {
-    credentialless?: "credentialless";
-  }
-}
 
 const Browser: FC<ComponentProcessProps> = ({ id }) => {
   const {
