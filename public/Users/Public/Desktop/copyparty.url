@@ -1,5 +1,0 @@
-[InternetShortcut]
-BaseURL=Terminal
-URL=git clone https://github.com/9001/copyparty && cd copyparty && python -m copyparty
-Comment=Clone and (attempt to) run copyparty
-IconFile=/System/Icons/shortcut.webp
