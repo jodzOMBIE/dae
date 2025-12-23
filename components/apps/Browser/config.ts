@@ -19,44 +19,6 @@ export const DINO_GAME = {
   url: "chrome://dino",
 };
 
-export const bookmarks: Bookmark[] = [
-  {
-    icon: FAVICON_BASE_PATH,
-    name: "daedalOS",
-    url: "https://dustinbrett.com/",
-  },
-  {
-    icon: "/System/Icons/Favicons/dir.webp",
-    name: "Index of /",
-    url: "http://localhost/",
-  },
-  DINO_GAME,
-  {
-    icon: "/System/Icons/Favicons/google.webp",
-    name: "Google",
-    url: "https://www.google.com/webhp?igu=1",
-  },
-  {
-    icon: "/System/Icons/Favicons/wikipedia.webp",
-    name: "Wikipedia",
-    url: "https://www.wikipedia.org/",
-  },
-  {
-    icon: "/System/Icons/Favicons/archive.webp",
-    name: "Internet Archive",
-    url: "https://archive.org/",
-  },
-  {
-    icon: "/System/Icons/webamp.webp",
-    name: "Winamp Skin Museum",
-    url: "https://skins.webamp.org/",
-  },
-  {
-    icon: "/System/Icons/Favicons/aos.webp",
-    name: "AaronOS",
-    url: "https://aaronos.dev/",
-  },
-];
 
 export const HOME_PAGE = "https://www.google.com/webhp?igu=1";
 
