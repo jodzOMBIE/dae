@@ -369,14 +369,14 @@ export const DEFAULT_SCROLLBAR_WIDTH = 17;
 export const TASKBAR_HEIGHT = 30;
 
 export const PACKAGE_DATA = {
-  alias: "daedalOS",
+  alias: "HiT-ME!OS",
   author: {
-    email: "dustinbrett@gmail.com",
-    name: "Dustin Brett",
+    email: "office@urban-mpire.com",
+    name: "Spoofed by Joshua Dzombic | Original build by Dustin Brett ",
     npub: "npub10uc7hg6wdxhhd7ee8x9c5lr9d0ux7272rv2m0mc03ds54q7quxjss02r3p",
-    url: "https://dustinbrett.com",
+    url: "https://urban-mpire.com",
   },
-  description: "Desktop environment in the browser",
+  description: "Services, Dienste, Spiele & Mehr",
   license: "MIT",
   version: "2.0.0",
 };
