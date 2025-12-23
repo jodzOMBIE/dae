@@ -455,28 +455,7 @@ const Browser: FC<ComponentProcessProps> = ({ id }) => {
           <Network />
         </Button>
       </nav>
-      <nav>
-        {bookmarks.map(({ name, icon, url: bookmarkUrl }) => (
-          <Button
-            key={name}
-            onClick={({ ctrlKey }) => {
-              if (ctrlKey) {
-                open("Browser", { url: bookmarkUrl });
-              } else {
-                goToLink(bookmarkUrl);
-              }
-            }}
-            {...label(
-              `${name}\n${bookmarkUrl
-                .replace(/^http:\/\//, "")
-                .replace(/\/$/, "")}`
-            )}
-            {...bookmarkMenu}
-          >
-            <Icon alt={name} imgSize={16} src={icon} singleSrc />
-          </Button>
-        ))}
-      </nav>
+     
       <iframe
         ref={iframeRef}
         onLoad={() => {
