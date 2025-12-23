@@ -84,12 +84,15 @@ const createSearchIndex = (path) => {
       const keyPath = normalizePath(fullPath);
 
       if (extname(entry).toLowerCase() === ".url") {
-        const {
-          InternetShortcut: { URL: url = "" },
-        } = parse(readFileSync(fullPath).toString());
+        try {
+          const parsed = parse(readFileSync(fullPath).toString());
+          const url = parsed?.InternetShortcut?.URL || "";
 
-        if (url.length > 1 && url.startsWith("/")) {
-          return;
+          if (url.length > 1 && url.startsWith("/")) {
+            return;
+          }
+        } catch (error) {
+          console.warn(`Warning: Failed to parse .url file: ${keyPath}`);
         }
       }
 
