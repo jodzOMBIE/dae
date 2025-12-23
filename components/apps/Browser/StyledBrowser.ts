@@ -8,13 +8,13 @@ const StyledBrowser = styled.div<StyledBrowserProps>`
   iframe {
     background-color: ${({ $hasSrcDoc }) => ($hasSrcDoc ? "#fff" : "initial")};
     border: 0;
-    height: calc(100% - 42px );
+    height: calc(100% - 0px );
     width: 100%;
   }
 
   nav {
     background-color: rgb(87 87 87);
-    display: flex;
+    display: none;
     padding: 4px 0;
     place-content: center;
     place-items: center;
