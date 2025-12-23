@@ -312,7 +312,7 @@ export const SESSION_FILE = "/session.json";
 
 export const SHORTCUT_ICON = `${ICON_PATH}/shortcut.webp`;
 
-export const FAVICON_BASE_PATH = "/favicon.ico";
+export const FAVICON_BASE_PATH = "https://hit-me.media/wp-content/uploads/2025/12/hmm-e1766489786762.png";
 
 export const FOLDER_ICON = `${ICON_PATH}/folder.webp`;
 
