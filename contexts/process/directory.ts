@@ -29,8 +29,8 @@ const directory: Processes = {
       height: 500,
       width: 600,
     },
-    icon: "/System/Icons/chromium.webp",
-    title: "Browser",
+    icon: "https://hit-me.media/wp-content/uploads/2025/12/Nibie.png",
+    title: "NibIE",
   },
   ClassiCube: {
     Component: dynamic(() => import("components/apps/ClassiCube")),
