@@ -31,7 +31,6 @@ import { useProcesses } from "contexts/process";
 import processDirectory from "contexts/process/directory";
 import useHistory from "hooks/useHistory";
 import Button from "styles/common/Button";
-import Icon from "styles/common/Icon";
 import {
   FAVICON_BASE_PATH,
   IFRAME_CONFIG,
