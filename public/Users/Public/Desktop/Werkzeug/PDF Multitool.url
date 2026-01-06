@@ -1,5 +1,6 @@
 [InternetShortcut]
-BaseURL=ExtrernalURL
+BaseURL=ExternalURL
 URL=https://www.ilovepdf.com/?kiosk=1
 Comment=iLovePDF - Open in kiosk mode
 IconFile=/System/Icons/shortcut.webp
+
