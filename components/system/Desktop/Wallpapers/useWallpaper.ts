@@ -430,11 +430,17 @@ const useWallpaper = (
             isAfterNextBackground ? "0" : "1"
           );
 
-          if (!isTopWindow && wallpaperName !== "ART_INSTITUTE_OF_CHICAGO") {
-            document.documentElement.style.setProperty(
-              "--background-blend-mode",
-              "difference"
-            );
+          if (!isTopWindow) {
+            if (wallpaperName !== "ART_INSTITUTE_OF_CHICAGO") {
+              document.documentElement.style.setProperty(
+                "--background-blend-mode",
+                "difference"
+              );
+            } else {
+              document.documentElement.style.removeProperty(
+                "--background-blend-mode"
+              );
+            }
           }
         };
 
