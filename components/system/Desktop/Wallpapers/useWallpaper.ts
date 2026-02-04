@@ -431,10 +431,16 @@ const useWallpaper = (
           );
 
           if (!isTopWindow) {
-            document.documentElement.style.setProperty(
-              "--background-blend-mode",
-              "difference"
-            );
+            if (wallpaperName !== "ART_INSTITUTE_OF_CHICAGO") {
+              document.documentElement.style.setProperty(
+                "--background-blend-mode",
+                "difference"
+              );
+            } else {
+              document.documentElement.style.removeProperty(
+                "--background-blend-mode"
+              );
+            }
           }
         };
 
