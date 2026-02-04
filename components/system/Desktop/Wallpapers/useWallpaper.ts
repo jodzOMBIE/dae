@@ -418,7 +418,11 @@ const useWallpaper = (
             `url(${CSS.escape(
               url
             )}) ${positionSize} ${repeat} fixed border-box border-box ${
-              isTopWindow ? colors.background : colors.text
+              wallpaperName === "ART_INSTITUTE_OF_CHICAGO"
+                ? "#051009"
+                : isTopWindow
+                ? colors.background
+                : colors.text
             }`
           );
           document.documentElement.style.setProperty(
