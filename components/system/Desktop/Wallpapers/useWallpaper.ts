@@ -433,7 +433,7 @@ const useWallpaper = (
           if (!isTopWindow) {
             document.documentElement.style.setProperty(
               "--background-blend-mode",
-              "difference"
+              "normal"
             );
           }
         };
