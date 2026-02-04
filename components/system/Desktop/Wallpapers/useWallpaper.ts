@@ -11,6 +11,7 @@ import {
   WALLPAPER_PATHS,
   WALLPAPER_WORKERS,
   WALLPAPER_WORKER_NAMES,
+  ART_INSTITUTE_OF_CHICAGO_BG_COLOR,
   bgPositionSize,
 } from "components/system/Desktop/Wallpapers/constants";
 import {
@@ -418,7 +419,11 @@ const useWallpaper = (
             `url(${CSS.escape(
               url
             )}) ${positionSize} ${repeat} fixed border-box border-box ${
-              isTopWindow ? colors.background : colors.text
+              wallpaperName === "ART_INSTITUTE_OF_CHICAGO"
+                ? ART_INSTITUTE_OF_CHICAGO_BG_COLOR
+                : isTopWindow
+                ? colors.background
+                : colors.text
             }`
           );
           document.documentElement.style.setProperty(
