@@ -6,10 +6,13 @@ type StyledBrowserProps = {
 
 const StyledBrowser = styled.div<StyledBrowserProps>`
   iframe {
-    background-color: ${({ $hasSrcDoc }) => ($hasSrcDoc ? "#fff" : "initial")};
+    background-color: ${({ $hasSrcDoc }) => ($hasSrcDoc ? "#fff" : "#000")};
     border: 0;
-    height: calc(100% - 0px );
+    height: 100%;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   nav {
