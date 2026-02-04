@@ -61,6 +61,8 @@ export const WALLPAPER_WORKER_NAMES = Object.keys(WALLPAPER_WORKERS);
 
 export const REDUCED_MOTION_PERCENT = 0.1;
 
+export const ART_INSTITUTE_OF_CHICAGO_BG_COLOR = "#051009";
+
 export const WALLPAPER_MENU: WallpaperMenuItem[] = [
   {
     id: "ART_INSTITUTE_OF_CHICAGO",

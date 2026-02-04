@@ -11,6 +11,7 @@ import {
   WALLPAPER_PATHS,
   WALLPAPER_WORKERS,
   WALLPAPER_WORKER_NAMES,
+  ART_INSTITUTE_OF_CHICAGO_BG_COLOR,
   bgPositionSize,
 } from "components/system/Desktop/Wallpapers/constants";
 import {
@@ -419,7 +420,7 @@ const useWallpaper = (
               url
             )}) ${positionSize} ${repeat} fixed border-box border-box ${
               wallpaperName === "ART_INSTITUTE_OF_CHICAGO"
-                ? "#051009"
+                ? ART_INSTITUTE_OF_CHICAGO_BG_COLOR
                 : isTopWindow
                 ? colors.background
                 : colors.text
