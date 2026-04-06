@@ -1,0 +1,1 @@
+Creates a new empty Gamehub folder at public/Users/Public/Desktop/Gamehub/
