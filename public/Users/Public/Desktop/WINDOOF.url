@@ -2,4 +2,4 @@
 BaseURL=Browser
 URL=https://www.windows93.net/?kiosk=1
 Comment=Windows93 - Open in kiosk mode
-IconFile=/System/Icons/shortcut.webp
+IconFile=https://hit-me.media/wp-content/uploads/2026/04/windows93.gif
