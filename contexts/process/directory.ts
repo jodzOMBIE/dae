@@ -405,7 +405,7 @@ const directory: Processes = {
     icon: "/System/Icons/webamp.webp",
     libs: ["/Program Files/Webamp/webamp.bundle.min.js"],
     singleton: true,
-    title: "Webamp",
+    title: "settinger",
   },
 };
 
