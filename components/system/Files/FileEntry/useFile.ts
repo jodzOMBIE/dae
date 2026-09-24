@@ -50,6 +50,11 @@ const useFile = (url: string, path: string): UseFile => {
         updateFolder(DESKTOP_PATH, basename(runUrl));
       }
 
+      if (/^https?:\/\/(?:www\.)?ustvnow\.com(?:\/|$)/i.test(runUrl)) {
+        window.open(runUrl, "_blank", "noopener,noreferrer");
+        return;
+      }
+
       if (activePid) {
         setUrl(activePid, runUrl);
         if (processesRef.current[activePid].minimized) minimize(activePid);
