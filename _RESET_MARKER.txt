@@ -1,0 +1,8 @@
+This commit resets the repository to match the state at commit 9b9cf052b584633794ded9f059ca3688a7648da0.
+
+Original commit message: Update Patchy.url
+Commit tree: 4d5c90ce49b5cc0df81a3f02328f5d38327487a9
+Date: 2026-09-26T22:38:00Z
+
+To restore all files to this exact state, the repository would need to be reset using:
+git reset --hard 9b9cf052b584633794ded9f059ca3688a7648da0
