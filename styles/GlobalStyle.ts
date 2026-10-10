@@ -1,6 +1,8 @@
 import * as styled from "styled-components";
 
 const GlobalStyle = styled.createGlobalStyle`
+  @import url("https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap");
+
   *,
   *::before,
   *::after {
@@ -20,6 +22,7 @@ const GlobalStyle = styled.createGlobalStyle`
   body,
   html {
     font-family: ${({ theme }) => theme.formats.systemFont};
+    font-weight: 300;
   }
 
   body {
