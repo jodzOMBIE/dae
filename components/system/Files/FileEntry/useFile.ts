@@ -14,6 +14,17 @@ import { isYouTubeUrl } from "utils/functions";
 
 type UseFile = (pid: string, icon?: string) => Promise<void>;
 
+const NEW_TAB_URL_PATTERNS = [
+  /^https?:\/\/(?:www\.)?(?:ustvnow|sudoaquarelle|rtsoft|unsplash|escapemotions)\.com(?:[/?#]|$)/i,
+  /^https?:\/\/vps\.oglo\.dev(?:[/?#]|$)/i,
+  /^https?:\/\/(?:[a-z0-9-]+\.)*itch\.(?:io|zone)(?:[/?#]|$)/i,
+  /^https?:\/\/(?:www\.)?(?:codepen\.io|hit-me\.media)(?:[/?#]|$)/i,
+  /^https?:\/\/(?:www\.)?(?:play\.)?js13kgames\.com(?:[/?#]|$)/i,
+  /^https?:\/\/meow\.tap2play\.io(?:[/?#]|$)/i,
+  /^https?:\/\/quizshow\.urban-mpire\.com(?:[/?#]|$)/i,
+  /^https?:\/\/(?:www\.)?(?:coolmathgames|crazygames|lexaloffle)\.com(?:[/?#]|$)/i,
+] as const;
+
 const useFile = (url: string, path: string): UseFile => {
   const { setForegroundId, updateRecentFiles } = useSession();
   const { createPath, updateFolder } = useFileSystem();
@@ -50,8 +61,11 @@ const useFile = (url: string, path: string): UseFile => {
         updateFolder(DESKTOP_PATH, basename(runUrl));
       }
 
-      if (/^https?:\/\/(?:www\.)?ustvnow\.com(?:\/|$)/i.test(runUrl)) {
-        window.open(runUrl, "_blank", "noopener,noreferrer");
+      const newTabUrl =
+        runUrl || (/^https?:\/\//i.test(pid) ? pid : "");
+
+      if (NEW_TAB_URL_PATTERNS.some((pattern) => pattern.test(newTabUrl))) {
+        window.open(newTabUrl, "_blank", "noopener,noreferrer");
         return;
       }
 
