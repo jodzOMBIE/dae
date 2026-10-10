@@ -15,7 +15,7 @@ import { isYouTubeUrl } from "utils/functions";
 type UseFile = (pid: string, icon?: string) => Promise<void>;
 
 const NEW_TAB_URL_PATTERNS = [
-  /^https?:\/\/(?:www\.)?(?:ustvnow|sudoaquarelle|rtsoft|unsplash|escapemotions)\.com(?:[/?#]|$)/i,
+  /^https?:\/\/(?:www\.)?(?:ustvnow|sudoaquarelle|rtsoft|unsplash|escapemotions|magma|clideo)\.com(?:[/?#]|$)/i,
   /^https?:\/\/(?:www\.)?jampea\.com(?:[/?#]|$)/i,
   /^https?:\/\/a\.ocv\.me(?:[/?#]|$)/i,
   /^https?:\/\/vps\.oglo\.dev(?:[/?#]|$)/i,
