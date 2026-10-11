@@ -83,6 +83,16 @@ const directory: Processes = {
     lockAspectRatio: true,
     title: "Emulator",
   },
+  Epub: {
+    Component: dynamic(() => import("components/apps/Epub")),
+    backgroundColor: "#f4f0e8",
+    defaultSize: {
+      height: 560,
+      width: 680,
+    },
+    icon: "/System/Icons/unknown.webp",
+    title: "EPUB Reader",
+  },
   FileExplorer: {
     Component: dynamic(() => import("components/apps/FileExplorer")),
     backgroundColor: "#202020",

@@ -18,6 +18,22 @@ public/Users/Public/**
 
 !public/Users/**/desktop.ini
 !public/Users/Public/Desktop
+!public/Users/Public/Desktop/Bibles
+!public/Users/Public/Desktop/Bibles/**
+!public/Users/Public/Desktop/Musik
+!public/Users/Public/Desktop/Musik/**
+!public/Users/Public/Desktop/Socialmedia
+!public/Users/Public/Desktop/Socialmedia/**
+!public/Users/Public/Desktop/Stocks
+!public/Users/Public/Desktop/Stocks/**
+!public/Users/Public/Desktop/Tools
+!public/Users/Public/Desktop/Tools/Office
+!public/Users/Public/Desktop/Tools/Office/Barcodescanner.url
+!public/Users/Public/Desktop/Tools/Office/Wetransfer.url
+!public/Users/Public/Desktop/Tools/Office/Coding
+!public/Users/Public/Desktop/Tools/Office/Coding/**
+!public/Users/Public/Desktop/Tools/Office/Printondemand
+!public/Users/Public/Desktop/Tools/Office/Printondemand/**
 !public/Users/Public/Desktop/My PC.url
 !public/Users/Public/Desktop/Public.url
 !public/Users/Public/Desktop/Archive

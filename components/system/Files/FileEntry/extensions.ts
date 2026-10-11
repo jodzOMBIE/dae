@@ -29,6 +29,10 @@ const types = {
     process: ["Emulator"],
     type: "Game ROM File",
   },
+  EpubDocument: {
+    process: ["Epub"],
+    type: "EPUB eBook",
+  },
   Font: {
     icon: "font",
     process: ["OpenType"],
@@ -123,6 +127,7 @@ const extensions: Record<string, Extension> = {
   ".asx": types.AudioPlaylist,
   ".bin": types.DiscImage,
   ".dsk": types.DiscImage,
+  ".epub": types.EpubDocument,
   ".exe": types.Application,
   ".htm": types.HtmlDocument,
   ".html": types.HtmlDocument,
